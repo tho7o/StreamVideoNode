@@ -3,11 +3,11 @@ var app = express();
 var fs = require('fs');
 
 app.get('/', (req, res) => {
-    res.json('welcome');
+    res.json({ status: 'Server working' });
 })
 
 
-app.get('/stream', function(req, res){
+app.get('/myvideo', (req, res) => {
     const path = './assets/video.mp4';
     const stat = fs.statSync(path);
     const fileSize = stat.size;
@@ -38,5 +38,5 @@ app.get('/stream', function(req, res){
 
 
 app.listen(3000, () => {
-    console.log('Listen in 3000');
+    console.log('Server listen in port 3000');
 })
