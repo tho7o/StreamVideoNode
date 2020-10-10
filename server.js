@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/myvideo', (req, res) => {
+app.get('/video', (req, res) => {
     const path = './assets/video.mp4';
     const stat = fs.statSync(path);
     const fileSize = stat.size;

@@ -1,7 +1,7 @@
 
 # STREAM VIDEO .MP4 FROM NODEJS SERVER
 
-##Install
+## Install
 ```
 npm install
 node server.js
@@ -9,7 +9,7 @@ node server.js
 
 ## PATH server
 ```
-http://<youripserver>:3000/myvideo
+http://<youripserver>:3000/video
 ```
 
-It will be enough to play the .mp4 video allocated in ./assest/ folder
+It will be enough to play the .mp4 video allocated in ./assets/ folder
