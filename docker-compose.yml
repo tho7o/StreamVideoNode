@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    container_name: Stream_Video
+    build: .
+    restart: unless-stopped  
+    volumes:
+      - ./assets:/usr/src/app/assets
+    ports:
+      - 3000:3000
+
